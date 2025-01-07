@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARANG Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+            img{
+            width: 100%;
+            }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="tarang.png" alt="TARANG 2K25">
+        <h1>TARANG Registration</h1>
+        <form action="/submit" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+            <label for="Branch">Branch</label>
+            <select id="Branch" name="Branch" required>
+                <option value="">Select your branch</option>
+                <option value="dance">AI</option>
+                <option value="singing">CIVIL</option>
+                <option value="drama">CSE</option>
+                <option value="art">EE</option>
+                <option value="art">ETC</option>
+            </select>      
+
+            <label for="Year">Year</label>
+            <select name="Year" id="Year">
+                <option value="">Select your year</option>
+                <option value="art">1st</option>
+                <option value="art">2nd</option>
+                <option value="art">3rd</option>
+                <option value="art">4th</option>
+
+            </select>
+            
+            <label for="event">Event</label>
+           <select id="event" name="event" required>
+                <option value="">Select an event</option>
+                <option value="dance">Dance Competition</option>
+                <option value="singing">Singing Competition</option>
+                <option value="drama">Fashion Show</option>
+                <option value="art">Art Exhibition</option>
+            </select>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
